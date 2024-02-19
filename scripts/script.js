@@ -319,5 +319,11 @@ finalButton.addEventListener('click', function() {
 let resetButton  = document.getElementById('reset-button');
 resetButton.addEventListener('click', function() {
 	final_sentence = "";
+	textContent1.textContent = "Select a Noun";
+	textContent2.textContent = "Select a Verb";
+	textContent3.textContent = "Select an Adverb";
+	textContent4.textContent = "Select a second Noun";
+	textContent5.textContent = "Select a location";
 	final_output.textContent = final_sentence;
+
 });
