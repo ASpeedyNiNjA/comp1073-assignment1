@@ -306,8 +306,18 @@ button5.addEventListener('click', sentence5);
 
 // Final Output Section //
 let final_sentence;
+let final_output = document.getElementById('final-para');
 let finalButton =  document.getElementById('final-button');
+
 finalButton.addEventListener('click', function() {
 	final_sentence =  noun + " " + verb + " " + adverb + " " + possessive + " " + locati0n + ".";
+	final_output.textContent = final_sentence;
 	console.log(final_sentence);
+});
+
+// Reset Button //
+let resetButton  = document.getElementById('reset-button');
+resetButton.addEventListener('click', function() {
+	final_sentence = "";
+	final_output.textContent = final_sentence;
 });
