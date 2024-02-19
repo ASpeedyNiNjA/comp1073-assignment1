@@ -5,7 +5,8 @@ let button1 = document.getElementById('button1');
 let textContent1 = document.querySelector('p');
 
 //For finished section 1 text
-let noun; 
+let nouns = ["The turkey", "Mom", "Dad", "The dog", "My teacher", "The elephant", "The cat"]; 
+let noun;
 let counter1 = 6;
 
 //For testing purposes and function refactoring at the start of each section
@@ -16,25 +17,25 @@ let increment = 0;
 // This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
 function textSelection1() {
 	if (counter1 === 0) {
-		noun = "The turkey";
+		noun = nouns[0];
 	}
 	else if (counter1 === 1) {
-		noun = "Mom";
+		noun = nouns[1];
 	}
 	else if (counter1 === 2) {
-		noun = "Dad";
+		noun = nouns[2];
 	}
 	else if (counter1 === 3) {
-		noun = "The dog";
+		noun = nouns[3];
 	}
 	else if (counter1 === 4) {
-		noun = "My teacher";
+		noun = nouns[4];
 	}
 	else if (counter1 === 5) {
-		noun = "The elephant";
+		noun = nouns[5];
 	}
 	else if (counter1 === 6) {
-		noun = "The cat";
+		noun = nouns[6];
 	}
 }
 
@@ -70,6 +71,7 @@ let button2 = document.getElementById('button2');
 let textContent2 = document.getElementById('para2'); //First instance of using getElementById for selecting paragraphs
 
 //For finished section 2 text
+let verbs  = ['sat on', 'ate', 'danced with', 'saw', 'doesn\'t like', 'kissed'];
 let verb; 
 let counter2 = 5;
 
@@ -77,22 +79,22 @@ let counter2 = 5;
 // This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
 function textSelection2() {
 	if (counter2 === 0) {
-		verb = "sat on";
+		verb = verbs[0];
 	}
 	else if (counter2 === 1) {
-		verb = "ate";
+		verb = verbs[1];
 	}
 	else if (counter2 === 2) {
-		verb = "danced with";
+		verb = verbs[2];
 	}
 	else if (counter2 === 3) {
-		verb = "saw";
+		verb = verbs[3];
 	}
 	else if (counter2 === 4) {
-		verb = "doesn't like";
+		verb = verbs[4];
 	}
 	else if (counter2 === 5) {
-		verb = "kissed";
+		verb = verbs[5];
 	}
 }
 
@@ -128,6 +130,7 @@ let button3 = document.getElementById('button3');
 let textContent3 = document.getElementById('para3'); //First instance of using getElementById for selecting paragraphs
 
 //For finished section 2 text
+let adverbs = ['a funny', 'a scary', 'a goofy', 'a slimy', 'a barking', 'a fat']
 let adverb; 
 let counter3 = 5;
 
@@ -135,22 +138,22 @@ let counter3 = 5;
 // This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
 function textSelection3() {
 	if (counter3 === 0) {
-		adverb = "a funny";
+		adverb = adverbs[0];
 	}
 	else if (counter3 === 1) {
-		adverb = "a scary";
+		adverb = adverbs[1];
 	}
 	else if (counter3 === 2) {
-		adverb = "a goofy";
+		adverb = adverbs[2];
 	}
 	else if (counter3 === 3) {
-		adverb = "a slimy";
+		adverb = adverbs[3];
 	}
 	else if (counter3 === 4) {
-		adverb = "a barking";
+		adverb = adverbs[4];
 	}
 	else if (counter3 === 5) {
-		adverb = "a fat";
+		adverb = adverbs[5];
 	}
 }
 
@@ -186,6 +189,7 @@ let button4 = document.getElementById('button4');
 let textContent4 = document.getElementById('para4'); //First instance of using getElementById for selecting paragraphs
 
 //For finished section 2 text
+let possessives = ['goat', 'monkey', 'fish', 'cow', 'frog', 'bug', 'worm'];
 let possessive; 
 let counter4 = 6;
 
@@ -193,25 +197,25 @@ let counter4 = 6;
 // This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
 function textSelection4() {
 	if (counter4 === 0) {
-		possessive = "goat";
+		possessive = possessives[0];
 	}
 	else if (counter4 === 1) {
-		possessive = "monkey";
+		possessive = possessives[1];
 	}
 	else if (counter4 === 2) {
-		possessive = "fish";
+		possessive = possessives[2];
 	}
 	else if (counter4 === 3) {
-		possessive = "cow";
+		possessive = possessives[3];
 	}
 	else if (counter4 === 4) {
-		possessive = "frog";
+		possessive = possessives[4];
 	}
 	else if (counter4 === 5) {
-		possessive = "bug";
+		possessive = possessives[5];
 	}
 	else if (counter4 === 6) {
-		possessive = "worm";
+		possessive = possessives[6];
 	}
 }
 
@@ -248,6 +252,7 @@ let button5 = document.getElementById('button5');
 let textContent5 = document.getElementById('para5'); //First instance of using getElementById for selecting paragraphs
 
 //For finished section 2 text
+let locations = ['on the moon', 'on the chair', 'in my spaghetti', 'in my soup', 'on the grass', 'in my shoes']
 let locati0n; 
 let counter5 = 6;
 
@@ -255,22 +260,22 @@ let counter5 = 6;
 // This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
 function textSelection5() {
 	if (counter5 === 0) {
-		locati0n = "on the moon";
+		locati0n = locations[0];
 	}
 	else if (counter5 === 1) {
-		locati0n = "on the chair";
+		locati0n = locations[1];
 	}
 	else if (counter5 === 2) {
-		locati0n = "in my spaghetti";
+		locati0n = locations[2];
 	}
 	else if (counter5 === 3) {
-		locati0n = "in my soup";
+		locati0n = locations[3];
 	}
 	else if (counter5 === 4) {
-		locati0n = "on the grass";
+		locati0n = locations[4];
 	}
 	else if (counter5 === 5) {
-		locati0n = "in my shoes";
+		locati0n = locations[5];
 	}
 }
 
