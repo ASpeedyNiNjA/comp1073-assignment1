@@ -276,7 +276,6 @@ function textSelection5() {
 
 // If I add a parameter I can make the function reusable with other variables instead of creating new functions with each variable name hard-coded
 function count5() {
-	console.log(counter5);
 	if (counter5 < 5) {
 		counter5++;
 	}
@@ -295,3 +294,15 @@ function sentence5() {
 	textContent5.textContent = locati0n;
 }
 button5.addEventListener('click', sentence5);
+
+
+
+
+
+// Final Output Section //
+let final_sentence;
+let finalButton =  document.getElementById('final-button');
+finalButton.addEventListener('click', function() {
+	final_sentence =  noun + " " + verb + " " + adverb + " " + possessive + " " + locati0n + ".";
+	console.log(final_sentence);
+});
