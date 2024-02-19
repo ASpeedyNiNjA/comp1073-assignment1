@@ -4,8 +4,10 @@
 let button1 = document.getElementById('button1');
 let textContent1 = document.querySelector('p');
 let counter1 = 0;
-let noun;
+let texter; //For testing purposes and function refactoring at the start of each section
+let noun; //For finished section 1 text
 
+//Anonymous Function DOM Event Refresher
 button1.addEventListener('click', function() {
 	textContent1.innerHTML = "Noun";
 	button1.style.backgroundColor = "SeaGreen";
@@ -15,8 +17,16 @@ button1.addEventListener('click', function() {
 
 
 
+//Brain fart, what's the next step.
+/*
+	- Variables are down
+	- Did a first anonymous function addEventListener to test & see 'does this still work for me'
+	- Github initialization
+	- Filezilla first upload
+	- Functions from DOM experiments two days ago included = logic mostly solved besides function refactoring and final sentence output
+	-  
 
-
+*/
 
 
 
@@ -26,7 +36,7 @@ button1.addEventListener('click', function() {
 
 /* Add all this in after DOM refresher */
 
-/*
+
 
 // This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
 function textSelection() {
@@ -63,4 +73,3 @@ function sentence1() {
 }
 button1.addEventListener('click', sentence1);
 
-*/
