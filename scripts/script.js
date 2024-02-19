@@ -6,7 +6,7 @@ let textContent1 = document.querySelector('p');
 
 //For finished section 1 text
 let noun; 
-let counter1 = 0;
+let counter1 = 6;
 
 //For testing purposes and function refactoring at the start of each section
 let texter; 
@@ -40,7 +40,6 @@ function textSelection1() {
 
 // If I add a parameter I can make the function reusable with other variables instead of creating new functions with each variable name hard-coded
 function count1() {
-	console.log(counter1);
 	if (counter1 < 6) {
 		counter1++;
 	}
@@ -59,6 +58,65 @@ function sentence1() {
 	textContent1.textContent = noun;
 }
 button1.addEventListener('click', sentence1);
+
+
+
+
+
+// Section Two //
+
+/* Variable Declarations */
+let button2 = document.getElementById('button2');
+let textContent2 = document.getElementById('para2'); //First instance of using getElementById for selecting paragraphs
+
+//For finished section 2 text
+let verb; 
+let counter2 = 5;
+
+/* Function Declarations */
+// This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
+function textSelection2() {
+	if (counter2 === 0) {
+		verb = "sat on";
+	}
+	else if (counter2 === 1) {
+		verb = "ate";
+	}
+	else if (counter2 === 2) {
+		verb = "danced with";
+	}
+	else if (counter2 === 3) {
+		verb = "saw";
+	}
+	else if (counter2 === 4) {
+		verb = "doesn't like";
+	}
+	else if (counter2 === 5) {
+		verb = "kissed";
+	}
+}
+
+// If I add a parameter I can make the function reusable with other variables instead of creating new functions with each variable name hard-coded
+function count2() {
+	console.log(counter2);
+	if (counter2 < 5) {
+		counter2++;
+	}
+	else if (counter2 >= 5) {
+		counter2 = 0;
+	}
+}
+
+// Final Function + Event Listener, for the marble$
+function sentence2() {
+	button2.style.backgroundColor = 'Red';
+   button2.style.color = 'White';
+	button2.textContent = "Red Button";
+	count2();
+	textSelection2();
+	textContent2.textContent = verb;
+}
+button2.addEventListener('click', sentence2);
 
 
 
@@ -93,12 +151,4 @@ button1.addEventListener('click', sentence1);
 
 */
 
-
-
-//Anonymous Function DOM Event Refresher [testing tool for subsequent sections
-button2.addEventListener('click', function() {
-	textContent2.innerHTML = "Noun";
-	button2.style.backgroundColor = "SeaGreen";
-	button2.style.color = "SeaShell";
-});
 
