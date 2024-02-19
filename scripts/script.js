@@ -1,11 +1,19 @@
 /* Section One */
 
-//Variable Declarations 
+/* Variable Declarations */
 let button1 = document.getElementById('button1');
 let textContent1 = document.querySelector('p');
+
+//For finished section 1 text
+let noun; 
 let counter1 = 0;
-let texter; //For testing purposes and function refactoring at the start of each section
-let noun; //For finished section 1 text
+
+//For testing purposes and function refactoring at the start of each section
+let texter; 
+let increment = 0;
+
+
+
 
 //Anonymous Function DOM Event Refresher
 button1.addEventListener('click', function() {
@@ -28,7 +36,14 @@ button1.addEventListener('click', function() {
 
 */
 
+//Next Steps
+/*
+	1. Test if each function still works : console.log() 
+	2. refactor function variables
+	3. 7 changing sentence options
+	4. add nouns from assignment image
 
+*/
 
 
 
@@ -49,15 +64,27 @@ function textSelection() {
 	else if (increment === 2) {
 		texter = "Third Sentence Three 3";
 	}
+	else if (increment === 3) {
+		texter = "Fourth Sentence";
+	}
+	else if (increment === 4) {
+		texter = "Sentence Five";
+	}
+	else if (increment === 5) {
+		texter = "Sixth Sentence";
+	}
+	else if (increment === 6) {
+		texter = "7";
+	}
 }
 
 // If I add a parameter I can make the function reusable with other variables instead of creating new functions with each variable name hard-coded
 function count() {
 	console.log(increment);
-	if (increment < 3) {
+	if (increment < 7) {
 		increment++;
 	}
-	else if (increment >= 3) {
+	else if (increment >= 7) {
 		increment = 0;
 	}
 }
@@ -67,9 +94,9 @@ function sentence1() {
 	button1.style.backgroundColor = 'blue';
    button1.style.color = 'red';
 	button1.textContent = "Blue Button";
-	textSelection();
 	count();
-	textDare.textContent = texter;
+	textSelection();
+	textContent1.textContent = texter;
 }
 button1.addEventListener('click', sentence1);
 
