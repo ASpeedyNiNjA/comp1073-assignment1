@@ -98,7 +98,6 @@ function textSelection2() {
 
 // If I add a parameter I can make the function reusable with other variables instead of creating new functions with each variable name hard-coded
 function count2() {
-	console.log(counter2);
 	if (counter2 < 5) {
 		counter2++;
 	}
@@ -122,33 +121,177 @@ button2.addEventListener('click', sentence2);
 
 
 
+// Section Three //
+
+/* Variable Declarations */
+let button3 = document.getElementById('button3');
+let textContent3 = document.getElementById('para3'); //First instance of using getElementById for selecting paragraphs
+
+//For finished section 2 text
+let adverb; 
+let counter3 = 5;
+
+/* Function Declarations */
+// This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
+function textSelection3() {
+	if (counter3 === 0) {
+		adverb = "a funny";
+	}
+	else if (counter3 === 1) {
+		adverb = "a scary";
+	}
+	else if (counter3 === 2) {
+		adverb = "a goofy";
+	}
+	else if (counter3 === 3) {
+		adverb = "a slimy";
+	}
+	else if (counter3 === 4) {
+		adverb = "a barking";
+	}
+	else if (counter3 === 5) {
+		adverb = "a fat";
+	}
+}
+
+// If I add a parameter I can make the function reusable with other variables instead of creating new functions with each variable name hard-coded
+function count3() {
+	if (counter3 < 5) {
+		counter3++;
+	}
+	else if (counter3 >= 5) {
+		counter3 = 0;
+	}
+}
+
+// Final Function + Event Listener, for the marble$
+function sentence3() {
+	button3.style.backgroundColor = 'DarkBlue';
+   button3.style.color = 'White';
+	button3.textContent = "Blue Button";
+	count3();
+	textSelection3();
+	textContent3.textContent = adverb;
+}
+button3.addEventListener('click', sentence3);
 
 
 
 
 
+// Section Four //
+
+/* Variable Declarations */
+let button4 = document.getElementById('button4');
+let textContent4 = document.getElementById('para4'); //First instance of using getElementById for selecting paragraphs
+
+//For finished section 2 text
+let possessive; 
+let counter4 = 6;
+
+/* Function Declarations */
+// This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
+function textSelection4() {
+	if (counter4 === 0) {
+		possessive = "goat";
+	}
+	else if (counter4 === 1) {
+		possessive = "monkey";
+	}
+	else if (counter4 === 2) {
+		possessive = "fish";
+	}
+	else if (counter4 === 3) {
+		possessive = "cow";
+	}
+	else if (counter4 === 4) {
+		possessive = "frog";
+	}
+	else if (counter4 === 5) {
+		possessive = "bug";
+	}
+	else if (counter4 === 6) {
+		possessive = "worm";
+	}
+}
+
+// If I add a parameter I can make the function reusable with other variables instead of creating new functions with each variable name hard-coded
+function count4() {
+	console.log(counter4);
+	if (counter4 < 6) {
+		counter4++;
+	}
+	else if (counter4 >= 6) {
+		counter4 = 0;
+	}
+}
+
+// Final Function + Event Listener, for the marble$
+function sentence4() {
+	button4.style.backgroundColor = 'DarkViolet';
+   button4.style.color = 'White';
+	button4.textContent = "Purple Button";
+	count4();
+	textSelection4();
+	textContent4.textContent = possessive;
+}
+button4.addEventListener('click', sentence4);
 
 
 
 
-//Brain fart, what's the next step.
-/*
-	- Variables are down
-	- Did a first anonymous function addEventListener to test & see 'does this still work for me'
-	- Github initialization
-	- Filezilla first upload
-	- Functions from DOM experiments two days ago included = logic mostly solved besides function refactoring and final sentence output
-	-  
 
-*/
+// Section Five //
 
-//Next Steps
-/*
-	1. Test if each function still works : console.log() 
-	2. refactor function variables
-	3. 7 changing sentence options
-	4. add nouns from assignment image
+/* Variable Declarations */
+let button5 = document.getElementById('button5');
+let textContent5 = document.getElementById('para5'); //First instance of using getElementById for selecting paragraphs
 
-*/
+//For finished section 2 text
+let locati0n; 
+let counter5 = 6;
 
+/* Function Declarations */
+// This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
+function textSelection5() {
+	if (counter5 === 0) {
+		locati0n = "on the moon";
+	}
+	else if (counter5 === 1) {
+		locati0n = "on the chair";
+	}
+	else if (counter5 === 2) {
+		locati0n = "in my spaghetti";
+	}
+	else if (counter5 === 3) {
+		locati0n = "in my soup";
+	}
+	else if (counter5 === 4) {
+		locati0n = "on the grass";
+	}
+	else if (counter5 === 5) {
+		locati0n = "in my shoes";
+	}
+}
 
+// If I add a parameter I can make the function reusable with other variables instead of creating new functions with each variable name hard-coded
+function count5() {
+	console.log(counter5);
+	if (counter5 < 5) {
+		counter5++;
+	}
+	else if (counter5 >= 5) {
+		counter5 = 0;
+	}
+}
+
+// Final Function + Event Listener, for the marble$
+function sentence5() {
+	button5.style.backgroundColor = 'DeepPink';
+   button5.style.color = 'black';
+	button5.textContent = "Pink Button";
+	count5();
+	textSelection5();
+	textContent5.textContent = locati0n;
+}
+button5.addEventListener('click', sentence5);
