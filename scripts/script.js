@@ -1,20 +1,16 @@
 // Section One //
 
 /* Variable Declarations */
-let button1 = document.getElementById('button1');
-let textContent1 = document.querySelector('p');
-
-//For finished section 1 text
 let nouns = ["The turkey", "Mom", "Dad", "The dog", "My teacher", "The elephant", "The cat"]; 
 let noun;
 let counter1 = 6;
 
-//For testing purposes and function refactoring at the start of each section
-let texter; 
-let increment = 0;
+/* DOM Variable Declarations */
+let button1 = document.getElementById('button1');
+let textContent1 = document.querySelector('p');
 
 /* Function Declarations */
-// This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
+// This function needs to execute in another function combined with an addEventListener()
 function textSelection1() {
 	if (counter1 === 0) {
 		noun = nouns[0];
@@ -39,7 +35,7 @@ function textSelection1() {
 	}
 }
 
-// If I add a parameter I can make the function reusable with other variables instead of creating new functions with each variable name hard-coded
+// Counter function used in combination with the previous textSelection_() function.
 function count1() {
 	if (counter1 < 6) {
 		counter1++;
@@ -49,7 +45,7 @@ function count1() {
 	}
 }
 
-// Final Function + Event Listener, for the marble$
+// Final Function + Event Listener
 function sentence1() {
 	button1.style.backgroundColor = 'Seagreen';
    button1.style.color = 'Seashell';
@@ -67,16 +63,16 @@ button1.addEventListener('click', sentence1);
 // Section Two //
 
 /* Variable Declarations */
-let button2 = document.getElementById('button2');
-let textContent2 = document.getElementById('para2'); //First instance of using getElementById for selecting paragraphs
-
-//For finished section 2 text
 let verbs  = ['sat on', 'ate', 'danced with', 'saw', 'doesn\'t like', 'kissed'];
 let verb; 
 let counter2 = 5;
 
+/* DOM Variable Declarations */
+let button2 = document.getElementById('button2');
+let textContent2 = document.getElementById('para2'); //First instance of using getElementById for selecting paragraphs
+
 /* Function Declarations */
-// This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
+// This function needs to execute in another function combined with an addEventListener()
 function textSelection2() {
 	if (counter2 === 0) {
 		verb = verbs[0];
@@ -98,7 +94,7 @@ function textSelection2() {
 	}
 }
 
-// If I add a parameter I can make the function reusable with other variables instead of creating new functions with each variable name hard-coded
+// Counter function used in combination with the previous textSelection_() function.
 function count2() {
 	if (counter2 < 5) {
 		counter2++;
@@ -108,7 +104,7 @@ function count2() {
 	}
 }
 
-// Final Function + Event Listener, for the marble$
+// Final Function + Event Listener
 function sentence2() {
 	button2.style.backgroundColor = 'Red';
    button2.style.color = 'White';
@@ -135,7 +131,7 @@ let adverb;
 let counter3 = 5;
 
 /* Function Declarations */
-// This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
+// This function needs to execute in another function combined with an addEventListener()
 function textSelection3() {
 	if (counter3 === 0) {
 		adverb = adverbs[0];
@@ -157,7 +153,7 @@ function textSelection3() {
 	}
 }
 
-// If I add a parameter I can make the function reusable with other variables instead of creating new functions with each variable name hard-coded
+// Counter function used in combination with the previous textSelection_() function.
 function count3() {
 	if (counter3 < 5) {
 		counter3++;
@@ -167,7 +163,7 @@ function count3() {
 	}
 }
 
-// Final Function + Event Listener, for the marble$
+// Final Function + Event Listener
 function sentence3() {
 	button3.style.backgroundColor = 'DarkBlue';
    button3.style.color = 'White';
@@ -194,7 +190,7 @@ let possessive;
 let counter4 = 6;
 
 /* Function Declarations */
-// This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
+// This function needs to execute in another function combined with an addEventListener()
 function textSelection4() {
 	if (counter4 === 0) {
 		possessive = possessives[0];
@@ -219,7 +215,7 @@ function textSelection4() {
 	}
 }
 
-// If I add a parameter I can make the function reusable with other variables instead of creating new functions with each variable name hard-coded
+// Counter function used in combination with the previous textSelection_() function.
 function count4() {
 	console.log(counter4);
 	if (counter4 < 6) {
@@ -230,7 +226,7 @@ function count4() {
 	}
 }
 
-// Final Function + Event Listener, for the marble$
+// Final Function + Event Listener
 function sentence4() {
 	button4.style.backgroundColor = 'DarkViolet';
    button4.style.color = 'White';
@@ -257,7 +253,7 @@ let locati0n;
 let counter5 = 6;
 
 /* Function Declarations */
-// This function needs to execute in another function combined with an addEventListener() // A switch statement would work here as well, wanted to, stuck with an IF for first attempt
+// This function needs to execute in another function combined with an addEventListener()
 function textSelection5() {
 	if (counter5 === 0) {
 		locati0n = locations[0];
@@ -279,7 +275,7 @@ function textSelection5() {
 	}
 }
 
-// If I add a parameter I can make the function reusable with other variables instead of creating new functions with each variable name hard-coded
+// Counter function used in combination with the previous textSelection_() function.
 function count5() {
 	if (counter5 < 5) {
 		counter5++;
@@ -289,7 +285,7 @@ function count5() {
 	}
 }
 
-// Final Function + Event Listener, for the marble$
+// Final Function + Event Listener
 function sentence5() {
 	button5.style.backgroundColor = 'DeepPink';
    button5.style.color = 'black';
